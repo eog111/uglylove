@@ -1,0 +1,162 @@
+@font-face {
+    font-family: 'alternate';
+    src: url(../fonts/alternate/alternate.otf);
+}
+
+
+.background{
+    width: 400px;
+    height: 600px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate( -50%, -50%);
+    border: 1px solid black;
+     background: url(../images/bookbackground.jpg);
+    background-position: 0% 60%;
+    background-size: cover;
+
+}
+
+
+.alternate {
+    font-family: alternate;
+}
+
+.title{
+ position: center;
+ font-size: 15em;
+ text-align: center;
+opacity: 65%;
+position: absolute;
+top: -38%;
+line-height: 80%;
+animation: author_fade 9s;
+opacity: 0;
+animation-fill-mode: forwards;
+animation-delay: 1s;
+background: linear-gradient(to bottom, #ffffff, rgb(35, 159, 208), rgb(0, 119, 167));
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
+
+
+@keyframes title{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+.author{
+    color: rgb(92, 197, 238);
+    font-size: 4em;
+    left: 28%;
+    text-align: center;
+    position: absolute;
+    top: 58%;
+    line-height: 75%;
+    animation: author_fade 9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 3s;
+    transform: scale(1.3,1);
+
+    }
+    
+    @keyframes author_fade{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }
+
+.author2{
+    color: rgb(92, 197, 238);
+    font-size: 8em;
+    left:10%;
+    text-align: center;
+    position: absolute;
+    top: 58%;
+    line-height: 75%;
+    animation: author_fade 9s;
+    opacity: 0;
+    animation-fill-mode: forwards;
+    animation-delay: 4s;
+    transform: scale(1.1,0.9);
+  
+    }
+    
+    @keyframes author_fade{
+        0%{opacity: 0;}
+        100%{opacity: 1;}
+    }   
+
+
+
+@font-face {
+    font-family: 'fonnts';
+    src: url(../fonts/fonnts/fonnts.Light.ttf);
+}
+.fonnts{
+    font-family: fonnts;
+}
+
+.text{
+    font-style: italic;
+    font-weight: 400;
+    text-align: center;
+    position: absolute;
+    top: 93%;
+    left: 9%;
+    text-align: center;
+    color: white;
+
+	overflow: hidden;
+	white-space: nowrap;
+   
+    text-align: center;
+    font-size: 1em;
+    transform: scale(1.2,1);
+}
+.text:hover{
+    color:rgb(7, 116, 170);
+    /* animation: blinker 1s linear infinite;  */
+}
+
+.background:hover .text{
+    animation: blinker 1s linear infinite; 
+
+}
+@keyframes blinker{
+    0%{color: white;} 
+    50%{    color:rgb(7, 116, 170);    }
+    100%{color: white;}}
+
+
+
+.novel{
+color: white;
+position: absolute;
+top: 30%;
+left: 17%;
+animation: author_fade 3s;
+opacity: 0;
+animation-fill-mode: forwards;
+animation-delay: .5s;
+}
+
+@keyframes author_fade{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+
+
+
+.overlay-bubbles {
+  position: absolute;
+  top: 42.5%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  height: 85%;
+  opacity: 0.9;
+  
+}
